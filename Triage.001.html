@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+ <head>
+ <meta charset = "UTF-8">
+  <link rel = "stylesheet"
+   type = "text/css"
+   href = "styles.css" />
+<script>
+function loadform() {
+setRadioYN( getCookie("YNRadio") );
+}
+</script>
+ </head>
+<body>
+ <img src="NHSDigitalLogo.svg" width= 130px>
+<ul class="breadcrumb">
+	<li>Check assurance eligibility</li>
+</ul>
+<h1>Is this indicator already in the library?</h1>
+<h2>If you aren't sure, please <a href="/03browse.html">browse the library</a> and come back when you're ready.</h2>
+<p class="spacer"></p>
+<div id="001form" name="001form">
+  <input type="radio" name="001" id="Yes" value="Yes" checked onclick='RadioSelect()'><label> Yes</label><br><br>
+  <input type="radio" name="001" id="No" value="No" onclick='RadioSelect()'><label> No</label><br>
+
+  </div> 
+<p class="spacer"></p>
+<p class="button"><a href="" id='RadioLink'>Next</a></p>
+<script>
+document.getElementById('RadioLink').href = "Triage.001_yes_add_library_item.html";
+</script>
+   <script>
+    function RadioSelect() {
+   
+        if(document.getElementById('Yes').checked) {
+            document.getElementById('RadioLink').href = "/Triage.001_yes_add_library_item.html";
+        }
+		if(document.getElementById('No').checked) {
+            document.getElementById('RadioLink').href = "/Triage.002.html";
+        }
+    }
+</script>
+<script>
+ function GetRadioYN() {
+  var YNRadio = document.getElementsByName('001form');
+  var YNValue;
+  for(var i = 0; i < YNRadio.length; i++){
+      if(YNRadio[i].checked){
+          YNValue = YNRadio[i].value;
+      }
+  }
+  return YNValue;
+</script>
+<script>
+setCookie("YNRadio", GetRadioYN());
+</script>
+<script>
+function SetRadioYN(YNValue) {
+  var YNRadio = document.getElementsByName('001form');
+  for(var i = 0; i < YNRadio.length; i++){
+      if(YNRadio[i].value == YNValue){
+          YNRadio[i].checked = true;
+      }
+  }
+}
+</script>
+<script>
+ RadioSelect();
+</script>
+
+
+
+</body>
