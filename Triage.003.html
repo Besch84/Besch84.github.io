@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+ <head>
+ <meta charset = "UTF-8">
+  <link rel = "stylesheet"
+   type = "text/css"
+   href = "styles.css" />
+
+
+ </head>
+<body>
+ <img src="NHSDigitalLogo.svg" width= 130px>
+<ul class="breadcrumb">
+	<li>Check assurance eligibility</li>
+</ul>
+<h1>Does this indicator meet a need that isn't already being met?</h1>
+<h2>For example:<br>Yes - similar indicators exist, but they only apply to hospitals.</h2>
+<p class="spacer"></p>
+<div id="003form">
+  <input type="radio" name="003" id="Yes" value="Yes" checked onclick='RadioSelect()'><label> Yes</label><br><br>
+  <input type="radio" name="003" id="No" value="No" onclick='RadioSelect()'><label> No</label><br>
+
+  </div> 
+<p class="spacer"></p>
+<p class="button"><a href="" id='RadioLink'>Next</a></p>
+<script>
+document.getElementById('RadioLink').href = "/Triage.002_yes.001";
+</script>
+
+<p class="previous"><a href="/Triage.002.html">Previous</a></p>
+   <script>
+    function RadioSelect() {
+   
+        if(document.getElementById('Yes').checked) {
+            document.getElementById('RadioLink').href = "/Triage.002_yes.001";
+        }
+		if(document.getElementById('No').checked) {
+            document.getElementById('RadioLink').href = "/Triage.003.html";
+        }
+    }
+</script>
+
+
+
+
+</body>
