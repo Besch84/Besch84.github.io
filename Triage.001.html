@@ -53,9 +53,7 @@ document.getElementById('RadioLink').href = "Triage.001_yes_add_library_item.htm
   }
   return YNValue;
 </script>
-<script>
-setCookie("YNRadio", GetRadioYN());
-</script>
+
 <script>
 function SetRadioYN(YNValue) {
   var YNRadio = document.getElementsByName('001form');
@@ -68,8 +66,22 @@ function SetRadioYN(YNValue) {
 </script>
 <script>
  RadioSelect();
+  </script>
+<script>
+/*function setCookie("YNRadio", GetRadioYN());*/
+function setCookie(YNValue) {
+    document.cookie = YNValue;
+}
+</script> 
+<script>
+function SetRadioYN(YNValue) {
+  var YNRadio = document.getElementsByName('001form');
+  for(var i = 0; i < YNRadio.length; i++){
+      if(YNRadio[i].value == YNValue){
+          YNRadio[i].checked = true;
+      }
+  }
+}
 </script>
-
-
 
 </body>
