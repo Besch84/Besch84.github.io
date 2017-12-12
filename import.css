@@ -30,9 +30,8 @@ h1 {
 	position:relative;
 	font-family: arial, sans-serif;
 	font-weight: bold;
-	font-size: 50px;
-	max-width: 1000px;
-	padding-bottom: 30px;
+	font-size: 38px;
+	line-height: 38px;
 	border: 0px;
 	margin: 0px;
 }
