@@ -1,0 +1,166 @@
+<html><head>
+
+  <meta charset="UTF-8">
+  <title>Application Form</title>
+  <h3>35
+  <script>function RadioSelect() {
+   
+		        if(document.getElementById('Yes35').checked) {
+		            document.getElementById('RadioLink').href  = "37.html";
+		        }
+				if(document.getElementById('No35').checked) {
+		            document.getElementById('RadioLink').href = "36.html";
+						}
+					}
+				</script><style>
+#prevtext {
+	font-family: arial, sans-serif;
+	font-size: 26px;
+
+}
+input[type=radio] + label{
+  font: 23px arial, sans-serif;
+  font-weight: bold;
+  vertical-align: middle;
+  padding-bottom; 60px;
+
+}
+}
+input[type=radio]{
+  margin-top: 50px;
+  width: 23px;
+  height: 23px;
+  margin-bottom  : 0;
+  padding-bottom : 60px;
+  vertical-align: middle;
+}
+
+#YN {
+  margin-bottom: 30px;
+
+}
+
+h1 {
+	/* size: 50px;*/ 
+	position:relative;
+	font-family: arial, sans-serif;
+	font-weight: bold;
+	font-size: 50px;
+	max-width: 1000px;
+	padding-bottom: 30px;
+	border: 0px;
+	margin: 0px;
+}
+.multiple-choice {
+  display: block;
+  float: none;
+  clear: left;
+  position: relative;
+  padding: 0 0 0 38px;
+  margin-bottom: 10px; }
+  @media (min-width: 641px) {
+    .multiple-choice {
+      float: left; } }
+  .multiple-choice input {
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    width: 38px;
+    height: 38px;
+    z-index: 1;
+    margin: 0;
+    zoom: 1;
+    filter: alpha(opacity=0);
+    opacity: 0; }
+
+
+.panel {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  clear: both;
+  border-left-style: solid;
+  border-color: #bfc1c3;
+  padding: 0.78947em;
+  margin-bottom: 0.78947em; }
+  .panel :first-child {
+    margin-top: 0; }
+  .panel :only-child,
+  .panel :last-child {
+    margin-bottom: 0; }
+
+    .panel-border-narrow {
+  border-left-width: 5px; }
+
+h2 {
+	
+	font-family: arial, sans-serif;
+	font-weight: lighter;
+	font-size: 28px;
+	max-width: 1000px;
+	border: 0px;
+	margin: 0px;
+	padding-top: 0px;
+	color: 9A9A9A;
+	padding-bottom: 70px;
+
+}
+#AnswerArea {
+	width: 920px;
+	height: 34px;
+	font-size: 19px;
+	font-weight: lighter;
+	margin-bottom: 30px;
+}
+
+#BigBox {
+    width: 920px;
+    height: 150px;
+    font-size: 19px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+h3 {
+
+  font-size: 15px;
+}
+
+.button {
+    background-color: #00823b;
+    color: white;
+    position: relative;
+    display: -moz-inline-stack;
+    display: inline-block;
+    padding: .3em 1em ;
+    border: none;
+    border-radius: 0;
+    outline: 1px solid transparent;
+    outline-offset: -1px;
+    box-shadow: 0 2px 0 #003618;
+    font-size: 28px;
+    line-height: 1.25;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+</style>
+</head>
+<IMG STYLE="position:absolute; TOP:50px; LEFT:50px; WIDTH:150px; HEIGHT:150px" SRC="https://iviewplus.digital.nhs.uk/css/images/NHSDigitalLogo.svg"> 
+<hr width="100%" STYLE="position:absolute; top:220px">
+<!--Breadcrumb Text-->
+<hr width="100%" STYLE="position:absolute; top:260px">
+<body>
+<div style="position: absolute; TOP: 300px; left:100px"><h1>Is the numerator a subset of the denominator?</h1>
+<br>
+<br> 
+				<h2>If this indicator is a proportion, the numerator will generally be a sub-set of the denominator.<br><br>If the indicator is an incidence in a standard population, or ratio, the numerator and denominator will generally be calculated separately.<br><br>Example where an numerator is a sub-set of a denominator:<br>”This indicator calculates the percentage of women who were smokers at the time of delivery, from the number of maternities.”<br><br>Example where an indicator is not a sub-set of a denominator:<br>”This indicator measure the potential years of life lost per 100,000 registered patients, from conditions which are usually treatable.</h2>
+				<br>
+<div id="YN" name="Form001"><input type="radio" name="YN35"' id="Yes35" value="Yes" onclick='RadioSelect()'><label> Yes</label><br><br><input type="radio" name="YN35" id="No35" value="No" onclick='RadioSelect()'><label> No</label><br></div> 
+<button type="submit" class="button"><a href="" id='RadioLink'>Next</a></button><br><a ID="prevtext" href="34.html">Previous</a></div></body>
+</html>
